@@ -33,8 +33,17 @@ export const GET_TRACK = gql(`
 
 const Track = () => {
   const { trackId = '' } = useParams();
+  const { loading, error, data } = useQuery(GET_TRACK, {
+    variables: { trackId },
+  });
 
-  return <Layout></Layout>;
+  return (
+    <Layout>
+      <QueryResult error={error} loading={loading} data={data}>
+        {/* this is where our component displaying the data will go */}
+      </QueryResult>
+    </Layout>
+  );
 };
 
 export default Track;
