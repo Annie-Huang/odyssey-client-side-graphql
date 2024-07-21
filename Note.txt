@@ -15,3 +15,6 @@ http://localhost:3000/
 
 https://studio.apollographql.com/sandbox/schema/reference
 The endpoint to our GraphQL API: https://odyssey-lift-off-server.herokuapp.com/
+
+
+PS C:\react\odyssey-client-side-graphql> npm install graphql @apollo/client
