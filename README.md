@@ -8,13 +8,11 @@ You can [preview the completed demo app here](https://odyssey-catstronauts.netli
 
 The course will walk you step by step on how to implement the features you see in the demo app. This codebase is the starting point of your journey!
 
-
 To get started:
 
 1. Open an IDE at the root of the project.
 1. Run `npm install`.
 1. Run `npm start`.
-
 
 This will open up `localhost:3000` in your web browser.
 

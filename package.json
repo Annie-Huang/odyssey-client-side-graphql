@@ -21,7 +21,8 @@
     "test": "vitest",
     "start": "vite",
     "build": "vite build",
-    "generate": "graphql-codegen"
+    "generate": "graphql-codegen",
+    "prettier:write": "prettier . --write"
   },
   "browserslist": {
     "production": [

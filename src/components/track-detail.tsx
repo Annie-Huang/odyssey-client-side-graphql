@@ -18,12 +18,12 @@ import MarkDown from './md-content';
  * author, length, number of views, modules list, among other things.
  * It provides access to the first module of the track.
  */
-const TrackDetail: React.FC<{track: any}> = ({track}) => {
+const TrackDetail: React.FC<{ track: any }> = ({ track }) => {
   const {
     title,
     description,
     thumbnail,
-    author = { photo: '', name: ''},
+    author = { photo: '', name: '' },
     length,
     modulesCount,
     modules = [],
@@ -32,7 +32,7 @@ const TrackDetail: React.FC<{track: any}> = ({track}) => {
 
   return (
     <ContentSection>
-      <CoverImage src={thumbnail ?? ''} alt="" />
+      <CoverImage src={thumbnail ?? ''} alt='' />
       <TrackDetails>
         <DetailRow>
           <h1>{title}</h1>
@@ -41,15 +41,15 @@ const TrackDetail: React.FC<{track: any}> = ({track}) => {
           <DetailItem>
             <h4>Track details</h4>
             <IconAndLabel>
-              <IconView width="16px" />
-              <div id="viewCount">{numberOfViews} view(s)</div>
+              <IconView width='16px' />
+              <div id='viewCount'>{numberOfViews} view(s)</div>
             </IconAndLabel>
             <IconAndLabel>
-              <IconBook width="14px" height="14px" />
+              <IconBook width='14px' height='14px' />
               <div>{modulesCount} modules</div>
             </IconAndLabel>
             <IconAndLabel>
-              <IconTime width="14px" />
+              <IconTime width='14px' />
               <div>{humanReadableTimeFromSeconds(length ?? 0)}</div>
             </IconAndLabel>
           </DetailItem>
@@ -61,13 +61,13 @@ const TrackDetail: React.FC<{track: any}> = ({track}) => {
           <div>
             {/* Need to comment this out until Link is placed within a Router */}
             {/* <StyledLink to={`./module/${modules[0]['id']}`}> */}
-              <Button
-                icon={<IconRun width="20px" />}
-                color={colors.pink.base}
-                size="large"
-              >
-                Start Track
-              </Button>
+            <Button
+              icon={<IconRun width='20px' />}
+              color={colors.pink.base}
+              size='large'
+            >
+              Start Track
+            </Button>
             {/* </StyledLink> */}
           </div>
         </DetailRow>

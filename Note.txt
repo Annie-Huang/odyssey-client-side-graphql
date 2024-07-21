@@ -24,4 +24,5 @@ PS C:\react\odyssey-client-side-graphql> npm run generate
 Update tracks.tsx with GetTracks query.
 Then run this again:
 PS C:\react\odyssey-client-side-graphql> npm run generate
+PS C:\react\odyssey-client-side-graphql> prettier . --write
 

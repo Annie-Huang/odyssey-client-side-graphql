@@ -1,4 +1,4 @@
-import React, {PropsWithChildren} from 'react';
+import React, { PropsWithChildren } from 'react';
 import { colors, widths } from '../styles';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
@@ -13,7 +13,7 @@ const Header: React.FC<PropsWithChildren> = ({ children }) => {
     <HeaderBar>
       <Container>
         <HomeButtonContainer>
-          <HomeLink to="/">
+          <HomeLink to='/'>
             <HomeButton>
               <LogoContainer>
                 <Logo src={logo} />

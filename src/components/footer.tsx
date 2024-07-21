@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     <FooterContainer>
       2021 ©{' '}
       <LogoContainer>
-        <ApolloIcon width="100px" height="40px" />
+        <ApolloIcon width='100px' height='40px' />
       </LogoContainer>
     </FooterContainer>
   );

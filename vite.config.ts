@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 import fs from 'fs/promises';
 
 /*
@@ -12,10 +12,10 @@ export default defineConfig(() => ({
   },
   server: {
     host: 'localhost',
-    port: 3000
+    port: 3000,
   },
   esbuild: {
-    loader: "tsx",
+    loader: 'tsx',
     include: /src\/.*\.[tj]sx?$/,
     exclude: [],
   },
@@ -26,11 +26,11 @@ export default defineConfig(() => ({
       },
       plugins: [
         {
-          name: "load-js-files-as-jsx",
+          name: 'load-js-files-as-jsx',
           setup(build) {
             build.onLoad({ filter: /src\/.*\.js$/ }, async (args) => ({
-              loader: "jsx",
-              contents: await fs.readFile(args.path, "utf8"),
+              loader: 'jsx',
+              contents: await fs.readFile(args.path, 'utf8'),
             }));
           },
         },

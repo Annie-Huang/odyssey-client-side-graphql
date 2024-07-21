@@ -8,7 +8,10 @@ import { humanReadableTimeFromSeconds } from '../utils/helpers';
  * Module Navigation: displays a list of modules titles
  * from a track and navigates to the modules page
  */
-const ModulesNav: React.FC<{module: any, track: any}> = ({ module, track }) => {
+const ModulesNav: React.FC<{ module: any; track: any }> = ({
+  module,
+  track,
+}) => {
   return (
     <ModulesNavContainer>
       <ModuleTitle>
@@ -27,15 +30,15 @@ const ModulesNav: React.FC<{module: any, track: any}> = ({ module, track }) => {
               {/* <ModuleNavStyledLink
                 to={`/track/${track.id}/module/${navModule.id}`}
               > */}
-                <ModuleListItemContent isActive={navModule.id === module.id}>
-                  {navModule.id === module.id ? (
-                    <IconDoubleArrowRight width="14px" />
-                  ) : (
-                    <IconArrowRight width="14px" weight="thin" />
-                  )}
-                  <div>{navModule.title}</div>
-                  <div>{humanReadableTimeFromSeconds(navModule.length)}</div>
-                </ModuleListItemContent>
+              <ModuleListItemContent isActive={navModule.id === module.id}>
+                {navModule.id === module.id ? (
+                  <IconDoubleArrowRight width='14px' />
+                ) : (
+                  <IconArrowRight width='14px' weight='thin' />
+                )}
+                <div>{navModule.title}</div>
+                <div>{humanReadableTimeFromSeconds(navModule.length)}</div>
+              </ModuleListItemContent>
               {/* </ModuleNavStyledLink> */}
             </div>
           </ModuleListItem>
