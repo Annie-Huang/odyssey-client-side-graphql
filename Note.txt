@@ -5,3 +5,5 @@ https://github.com/apollographql-education/odyssey-client-side-graphql
 https://github.com/Annie-Huang/odyssey-client-side-graphql
 
 ---------------------------------------------------------------------------
+
+initial set up is copy from main branch in https://github.com/apollographql-education/odyssey-client-side-graphql
