@@ -36,3 +36,4 @@ PS C:\react\odyssey-client-side-graphql> npm run generate
 http://localhost:3000/track/c_0
 http://localhost:3000/track/c_1
 http://localhost:3000/track/c_2
+Confirm in home page, each individual card can get into individual <Track> page as well.
