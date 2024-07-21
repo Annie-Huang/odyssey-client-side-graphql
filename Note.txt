@@ -37,3 +37,8 @@ http://localhost:3000/track/c_0
 http://localhost:3000/track/c_1
 http://localhost:3000/track/c_2
 Confirm in home page, each individual card can get into individual <Track> page as well.
+
+
+Create "INCREMENT_TRACK_VIEWS" mutation in track-card.tsx
+Then run this again:
+PS C:\react\odyssey-client-side-graphql> npm run generate
