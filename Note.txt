@@ -4,6 +4,14 @@ https://www.apollographql.com/tutorials/client-side-graphql-react/01-feature-ove
 https://github.com/apollographql-education/odyssey-client-side-graphql
 https://github.com/Annie-Huang/odyssey-client-side-graphql
 
+
 ---------------------------------------------------------------------------
 
-initial set up is copy from main branch in https://github.com/apollographql-education/odyssey-client-side-graphql
+Initial set up is copy from main branch in https://github.com/apollographql-education/odyssey-client-side-graphql
+
+PS C:\react\odyssey-client-side-graphql> npm install
+PS C:\react\odyssey-client-side-graphql> npm start
+http://localhost:3000/
+
+https://studio.apollographql.com/sandbox/schema/reference
+The endpoint to our GraphQL API: https://odyssey-lift-off-server.herokuapp.com/
