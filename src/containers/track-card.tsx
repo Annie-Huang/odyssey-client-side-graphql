@@ -32,6 +32,7 @@ const INCREMENT_TRACK_VIEWS = gql(`
 const TrackCard: React.FC<{ track: Omit<Track, 'modules'> }> = ({ track }) => {
   const { title, thumbnail, author, length, modulesCount, id } = track;
 
+  // const [incrementTrackViews, { loading, error, data }] = useMutation(INCREMENT_TRACK_VIEWS, {
   const [incrementTrackViews] = useMutation(INCREMENT_TRACK_VIEWS, {
     variables: { incrementTrackViewsId: id },
     // to observe what the mutation response returns
