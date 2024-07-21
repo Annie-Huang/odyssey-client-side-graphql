@@ -26,3 +26,5 @@ Then run this again:
 PS C:\react\odyssey-client-side-graphql> npm run generate
 PS C:\react\odyssey-client-side-graphql> prettier . --write
 
+
+http://localhost:3000/track/c_0
