@@ -27,9 +27,12 @@ PS C:\react\odyssey-client-side-graphql> npm run generate
 PS C:\react\odyssey-client-side-graphql> prettier . --write
 
 
-http://localhost:3000/track/c_0
+
 
 
 Create "GET_TRACK" query in track.tsx
 Then run this again:
 PS C:\react\odyssey-client-side-graphql> npm run generate
+http://localhost:3000/track/c_0
+http://localhost:3000/track/c_1
+http://localhost:3000/track/c_2

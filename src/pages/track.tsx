@@ -3,6 +3,7 @@ import { Layout, QueryResult } from '../components';
 import { gql } from '../__generated__';
 import { useQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom';
+import TrackDetail from '../components/track-detail';
 
 export const GET_TRACK = gql(`
   # our query goes here
@@ -41,6 +42,7 @@ const Track = () => {
     <Layout>
       <QueryResult error={error} loading={loading} data={data}>
         {/* this is where our component displaying the data will go */}
+        <TrackDetail track={data?.track} />
       </QueryResult>
     </Layout>
   );
